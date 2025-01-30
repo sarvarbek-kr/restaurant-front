@@ -47,12 +47,12 @@ export default function HomeNavbar(props: HomeNavbarProps) {
         <Stack className="menu">
             <Box>
                 <NavLink to="/">
-                   <img alt="" className="brand-logo" src='/icons/burak.svg' />
+                   <img alt="" className="brand-logo" src='/icons/gusto.svg' />
                 </NavLink>
             </Box>
             <Stack className="links">
             <Box className={"hover-line"}>
-                <NavLink to="/"  activeClassName={"underline"}>Home</NavLink> 
+                <NavLink to="/"  activeClassName={"underline"}>Main</NavLink> 
             </Box>
             <Box className={"hover-line"}>
                 <NavLink to="/products" activeClassName={"underline"}>Products</NavLink>
@@ -143,12 +143,14 @@ export default function HomeNavbar(props: HomeNavbarProps) {
             </Stack>
         </Stack>
         <Stack className={"header-frame"}>
+          <Box className={"logo-frame"}>
+            <div className={"logo-img"}></div>
+          </Box>
           <Stack className={"detail"}>
             <Box className={"head-main-txt"} >
-              World's Most Delicious Cousine
+              Exploring Delicacies From Around the World
               </Box>
             <Box className={"wel-txt"}>The Choice, not just a choice</Box>
-            <Box className={"service-txt"}>24 hours service</Box>
             <Box className={"signup"}>
               {!authMember ? (
               <Button 
@@ -161,9 +163,6 @@ export default function HomeNavbar(props: HomeNavbarProps) {
                ) : null}
             </Box>
           </Stack>
-          <Box className={"logo-frame"}>
-            <div className={"logo-img"}></div>
-          </Box>
         </Stack>
        </Container>
     </div>
