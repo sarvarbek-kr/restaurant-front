@@ -43,7 +43,7 @@ export default function Events() {
                       <div className={"event-title-speaker"}>
                         <strong>{value.title}</strong>
                         <div className={"event-organizator"}>
-                          <img src={"/icons/speaker.svg"} />
+                          <img src={"/icons/id-badge-regular.svg"} />
                           <p className={"spec-text-author"}>{value.author}</p>
                         </div>
                       </div>

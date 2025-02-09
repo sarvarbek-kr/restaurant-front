@@ -42,12 +42,12 @@ export default function OtherNavbar(props : OtherNavbarProps) {
       <Stack className="menu">
           <Box>
               <NavLink to="/">
-                 <img alt="" className="brand-logo" src='/icons/burak.svg' />
+                 <img alt="" className="brand-logo" src='/icons/gusto.svg' />
               </NavLink>
           </Box>
           <Stack className="links">
           <Box className={"hover-line"}>
-              <NavLink to="/">Home</NavLink> 
+              <NavLink to="/">Main</NavLink> 
           </Box>
           <Box className={"hover-line"}>
               <NavLink to="/products" activeClassName={"underline"}>Products</NavLink>

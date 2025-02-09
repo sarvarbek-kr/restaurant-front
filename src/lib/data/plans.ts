@@ -1,11 +1,11 @@
 export const plans = [
 	{
-		title: 'Hot Discount Days',
-		desc: 'Each Friday we deliver highest discounts',
-		author: 'Chef Deming',
-		date: '30 min ago',
-		location: 'Turkey, Istambul',
-		img: '/img/discount.webp',
+		title: 'Itaewon Global Village Festival',
+		desc: 'Festival blends Korean traditional culture',
+		author: 'Tourism Association',
+		date: '2025.01.10',
+		location: 'Korea, Soul',
+		img: '/img/festival.png',
 	},
 	{
 		title: 'Coming Soon',

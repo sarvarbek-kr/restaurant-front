@@ -20,7 +20,7 @@ export default function ActiveUsers() {
     <div className={"active-users-frame"}>
        <Container>
          <Stack className={"main"}>
-            <Box className={"category-title"}>Active Users</Box>
+            <Box className={"category-title"}>Our Branches</Box>
             <Stack className={"cards-frame"}>
                 <CssVarsProvider>
                     {topUsers.length !== 0 ? (
@@ -49,7 +49,7 @@ export default function ActiveUsers() {
                         );
                     })
                     ) : (
-                        <Box className="no-data"> No Active Users!</Box>
+                        <Box className="no-data"> Branches's information is unavailable!</Box>
                     )}
                 </CssVarsProvider>
             </Stack>

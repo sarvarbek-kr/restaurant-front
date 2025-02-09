@@ -29,7 +29,7 @@ export default function NewDishes() {
     <div className={"new-products-frame"}>
        <Container>
         <Stack className={"main"}>
-            <Box className={"category-title"}>Fresh Menu</Box>
+            <Box className={"category-title"}>Seasonal Menu</Box>
             <Stack className={"cards-frame"}>
                 <CssVarsProvider>
                   {newDishes.length !== 0 ? (
@@ -72,7 +72,7 @@ export default function NewDishes() {
                         );
                     })
                     ) : (
-                        <Box className="no-data">New products are not available!</Box>
+                        <Box className="no-data">Seasonal Menu is unavailable!</Box>
                     )}
                 </CssVarsProvider>
             </Stack>

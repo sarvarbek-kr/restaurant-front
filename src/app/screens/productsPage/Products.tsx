@@ -97,7 +97,7 @@ const history = useHistory();
            flexDirection={'column'} 
            alignItems={'center'}>
             <Stack className={"avatar-big-box"} justifyContent={'space-between'}>
-                    <p>Burak Restaurant</p>
+                    <p>The Gusto Restaurant</p>
                     <Stack flexDirection={'row'} position={'relative'} alignItems={'center'}>
                        <input 
                        type="search" 
@@ -262,7 +262,7 @@ const history = useHistory();
                             );
                         })
                     ) : (
-                        <Box className="no-data">Products are not available</Box>
+                        <Box className="no-data">Products are unavailable</Box>
                     )}
                 </Stack>
             </Stack>
