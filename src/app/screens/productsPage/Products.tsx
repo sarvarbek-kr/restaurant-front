@@ -293,23 +293,45 @@ const history = useHistory();
 
 
       <div className={"brands-logo"}>
-        <Container className={"family-brands"}>
-            <Box className={"category-title"}>Our Family Brands</Box>
-            <Stack className={"brand-list"}>
-                <Box className={"review-box"}>
-                    <img src={"/img/gurme.webp"} alt=""/>
+        {/* <Container className={"family-brands"}>
+            <Box className={"category-title"}>Meet our Chef</Box>
+            <Stack
+          className={"events-info swiper-wrapper"}
+          spaceBetween={30}
+        >
+              <Stack className={"events-info-frame"}>
+                <div className={"events-img"}>
+                  <img src={value.img} className={"events-img"} />
+                </div>
+                <Box className={"events-desc"}>
+                  <Box className={"events-bott"}>
+                    <Box className={"bott-left"}>
+                      <div className={"event-title-speaker"}>
+                        <strong>{value.title}</strong>
+                        <div className={"event-organizator"}>
+                          <img src={"/icons/id-badge-regular.svg"} />
+                          <p className={"spec-text-author"}>{value.author}</p>
+                        </div>
+                      </div>
+
+                      <p className={"text-desc"}> {value.desc} </p>
+
+                      <div className={"bott-info"}>
+                        <div className={"bott-info-main"}>
+                          <img src={"/icons/calendar.svg"} />
+                          {value.date}
+                        </div>
+                        <div className={"bott-info-main"}>
+                          <img src={"/icons/location.svg"} />
+                          {value.location}
+                        </div>
+                      </div>
+                    </Box>
+                  </Box>
                 </Box>
-                <Box className={"review-box"}>
-                    <img src={"/img/seafood.webp"} alt=""/>
-                </Box>
-                <Box className={"review-box"}>
-                    <img src={"/img/sweets.webp"} alt=""/>
-                </Box>
-                <Box className={"review-box"}>
-                    <img src={"/img/doner.webp"} alt=""/>
-                </Box>    
-            </Stack>
-        </Container>
+              </Stack>
+        </Stack>
+        </Container> */}
       </div>
       <div className={"address"}>
         <Container>

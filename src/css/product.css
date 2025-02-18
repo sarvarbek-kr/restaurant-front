@@ -171,7 +171,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #ff9200;
+	background: #4e700a;
 	box-shadow: 4px 6px 20px #0000001a;
 	border-radius: 25px;
 	font-family: "Poppins";
@@ -317,6 +317,7 @@
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 43px;
+  color: #343434;
 }
 
 .products-page .products .brands-logo {

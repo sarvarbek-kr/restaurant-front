@@ -29,7 +29,7 @@ export default function NewDishes() {
     <div className={"new-products-frame"}>
        <Container>
         <Stack className={"main"}>
-            <Box className={"category-title"}>Seasonal Menu</Box>
+            <Box className={"category-title"}>Post-Meal Delights</Box>
             <Stack className={"cards-frame"}>
                 <CssVarsProvider>
                   {newDishes.length !== 0 ? (
