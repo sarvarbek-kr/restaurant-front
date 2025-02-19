@@ -298,7 +298,7 @@
     border-radius: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    background: rgb(112, 180, 91);
+    background: #4e700a;
     color: #f8f8ff;
     margin-bottom: 30px;
 }
@@ -307,20 +307,23 @@
     margin-bottom: 35px;
     margin-right: 30px;
     font-family: 'Commissioner';
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 700;
     line-height: 17px;
 }
 
 .order-page  .order-main-box .total-price-box .verify-button {
+    width: 163px;
+    height: 36px;
     margin-bottom: 20px;
     border-radius: 10px;
-    background: rgb(58, 135, 203);
+    background: #4e700a;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #f8f8ff;
     font-family: 'Commissioner';
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     margin-right: 20px;
+    margin-bottom: 30px;
 }
