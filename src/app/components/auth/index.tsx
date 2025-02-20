@@ -139,8 +139,8 @@ const handleLoginRequest = async () => {
             direction={"row"}
             sx={{ width: "800px" }}
           >
-            <ModalImg src={"/img/auth.webp"} alt="camera" />
-            <Stack sx={{ marginLeft: "69px", alignItems: "center" }}>
+            <ModalImg src={"/img/signup2.png"}  alt="camera" style={{ width: "500px", height: "100%", objectFit: "cover" }} />
+            <Stack sx={{ marginLeft: "39px", alignItems: "center" }}>
               <h2>Signup Form</h2>
               <TextField
                 sx={{ marginTop: "7px" }}
@@ -148,6 +148,9 @@ const handleLoginRequest = async () => {
                 label="username"
                 variant="outlined"
                 onChange={handleUsername}
+                InputLabelProps={{
+                  style: { color: "#00000080" }, 
+                }}
               />
               <TextField
                 sx={{ my: "17px" }}
@@ -155,6 +158,9 @@ const handleLoginRequest = async () => {
                 label="phone number"
                 variant="outlined"
                 onChange={handlePhone}
+                InputLabelProps={{
+                  style: { color: "#00000080" }, 
+                }}
               />
               <TextField
                 id="outlined-basic"
@@ -162,6 +168,9 @@ const handleLoginRequest = async () => {
                 variant="outlined"
                 onChange={handlePassword}
                 onKeyDown={handlePasswordKeydown}
+                InputLabelProps={{
+                  style: { color: "#00000080" }, 
+                }}
               />
               <Fab
                 sx={{ marginTop: "30px", width: "120px" }}
@@ -195,10 +204,10 @@ const handleLoginRequest = async () => {
             direction={"row"}
             sx={{ width: "700px" }}
           >
-            <ModalImg src={"/img/auth.webp"} alt="camera" />
+            <ModalImg src={"/img/signup2.png"} alt="camera"  />
             <Stack
               sx={{
-                marginLeft: "65px",
+                marginLeft: "35px",
                 marginTop: "25px",
                 alignItems: "center",
               }}
@@ -210,6 +219,9 @@ const handleLoginRequest = async () => {
                 variant="outlined"
                 sx={{ my: "10px" }}
                 onChange={handleUsername}
+                InputLabelProps={{
+                  style: { color: "#00000080" }, 
+                }}
               />
               <TextField
                 id={"outlined-basic"}
@@ -218,6 +230,9 @@ const handleLoginRequest = async () => {
                 type={"password"}
                 onChange={handlePassword}
                 onKeyDown={handlePasswordKeydown}
+                InputLabelProps={{
+                  style: { color: "#00000080" }, 
+                }}
               />
               <Fab
                 sx={{ marginTop: "27px", width: "120px" }}

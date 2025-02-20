@@ -532,17 +532,18 @@
   }
   
   .homepage .events-frame .swiper-pagination-bullet {
-    margin-right: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
     width: 8px;
     height: 8px;
     text-align: center;
     opacity: 1;
-    background: #f8f8ff;
+    background: #d9d9d9;
     border-radius: 50%;
   }
   
   .homepage .events-frame .swiper-pagination-bullet-active {
-    background: #343434;
+    background: #000;
     border-radius: 50%;
   }
   

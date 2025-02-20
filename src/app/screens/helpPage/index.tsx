@@ -31,11 +31,11 @@ export default function HelpPage() {
                 value={value}
                 onChange={handleChange}
                 aria-label="lab API tabs example"
-                className={"table_list"}
+                className={"table-list"}
               >
-                <Tab label="TERMS" value={"1"} />
-                <Tab label="FAQ" value={"2"} />
-                <Tab label="CONTACT" value={"3"} />
+                <Tab className="tab-name" label="TERMS" value={"1"} />
+                <Tab className="tab-name" label="FAQ" value={"2"} />
+                <Tab className="tab-name" label="CONTACT" value={"3"} />
               </Tabs>
             </Box>
           </Box>

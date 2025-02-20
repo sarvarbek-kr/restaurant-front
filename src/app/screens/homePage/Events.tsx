@@ -27,7 +27,7 @@ export default function Events() {
             clickable: true,
           }}
           autoplay={{
-            delay: 2000,
+            delay: 3000,
             disableOnInteraction: true,
           }}
         >
@@ -72,7 +72,7 @@ export default function Events() {
             src={"/icons/arrow-right.svg"}
             className={"swiper-button-prev"}
           />
-          <div className={"dot-frame-pagination swiper-pagination"}></div>
+          <div className={"dot-frame-pagination .swiper-pagination"}></div>
           <img
             src={"/icons/arrow-right.svg"}
             className={"swiper-button-next"}
