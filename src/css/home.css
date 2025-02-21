@@ -111,6 +111,11 @@
     cursor: pointer;
     margin-left: 5px;
     margin-right: 5px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.homepage .popular-dishes-frame .cards-frame .card:hover {
+  transform: scale(1.05);
 }
 
 .homepage .popular-dishes-frame .cards-frame .card .card-cover {
@@ -136,8 +141,6 @@
     line-height: 34px;
     color: #e3c08d;
 }
-
-
 
 /*   NEW PRODUCTS  */
 
@@ -176,6 +179,11 @@
     height: 335px;
     width: 290px;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.homepage .new-products-frame .main .card:hover {
+  transform: scale(1.1);
 }
 
 .homepage .new-products-frame .product-sale {
@@ -313,6 +321,15 @@
     height: 335px;
     width: 290px;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.homepage .active-users-frame .cards-frame:hover .card {
+  filter: blur(3px); 
+}
+
+.homepage .active-users-frame .cards-frame .card:hover {
+    transform: scale(1.1);
+    filter: blur(0);
 }
 
 .homepage .active-users-frame .product-detail {

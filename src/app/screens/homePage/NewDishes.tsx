@@ -9,6 +9,7 @@ import Divider from "../../components/divider";
 import AspectRatio from "@mui/joy/AspectRatio";
 import { useSelector } from "react-redux";
 import { createSelector } from "reselect";
+import { useHistory } from "react-router-dom";
 import { retrieveNewDishes, retrievePopularDishes } from "./selector";
 import { Product } from "../../../lib/types/product";
 import { serverApi } from "../../../lib/config";
@@ -22,8 +23,13 @@ const newDishesRetriever = createSelector(retrieveNewDishes, (newDishes) => ({
 
 export default function NewDishes() {
     const { newDishes } = useSelector(newDishesRetriever);
+    const history = useHistory();
 
   console.log("newDishes:", newDishes);
+
+  const chooseProductHandler = (id:string) => {
+    history.push(`/products/${id}`)
+  }
 
     return (
     <div className={"new-products-frame"}>
@@ -39,7 +45,7 @@ export default function NewDishes() {
                         ? product.productVolume + "l" 
                         : product.productSize + " size ";
                         return (
-                            <Card key={product._id} variant="outlined" className={"card"}>
+                            <Card key={product._id} variant="outlined" className={"card"} onClick={()=> chooseProductHandler(product._id)}>
                                 <CardOverflow>
                                     <div className="product-sale">{sizeVolume}</div>
                                     <AspectRatio ratio="1">
