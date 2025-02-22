@@ -83,7 +83,7 @@ export default function PopularDishes() {
                         py: 1.5,
                         px: "var(--Card-padding)",
                         borderTop: "1px solid",
-                        height: "60px",
+                        height: "80px",
                       }}
                       >
                         <Typography
