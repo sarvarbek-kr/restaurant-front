@@ -34,9 +34,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #f8f8ff;
+    background: #f7f7f7;
     border-radius: 16px;
-    box-shadow: inset 0px 4px 16px 0px rgba(242, 189, 87, 0.04),inset 0px 1px 11px 12px rgb(211, 211, 231),14px 14px 5px 0px rgb(187, 187, 191);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 25px;
 }
 
@@ -186,8 +186,8 @@
 	width: 100%;
 	max-height: 285px;
 	margin-bottom: 25px;
-	background: #f8f8ff;
-	box-shadow: -13px 16px 4px rgba(0, 0, 0, 0.25), inset 0px -3px 20px 11px #18177033;
+    background: #f7f7f7;
+	box-shadow: 0px 4px 14px 5px rgba(0, 0, 0, 0.25);
 	border-radius: 16px;
 }
 
@@ -289,6 +289,8 @@
     width: 93px;
     height: 36px;
     border-radius: 10px;
+    background: #707070;
+    color: #f8f8ff;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 30px;
 }

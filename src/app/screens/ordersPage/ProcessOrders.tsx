@@ -104,7 +104,7 @@ export default function ProcessOrders(props: ProcessOrdersProps) {
                             className={"verify-button"}
                             onClick={finishOrderHandler}
                             >
-                                Verify to Fulfil
+                                order received
                             </Button>
                         </Box>
                     </Box>
