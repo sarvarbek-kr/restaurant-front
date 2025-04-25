@@ -2,6 +2,9 @@ import { Box, Stack } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import { plans } from "../../../lib/data/plans";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 SwiperCore.use([Autoplay, Navigation, Pagination]);
 
@@ -72,7 +75,7 @@ export default function Events() {
             src={"/icons/arrow-right.svg"}
             className={"swiper-button-prev"}
           />
-          <div className={"dot-frame-pagination .swiper-pagination"}></div>
+          <div className={"dot-frame-pagination swiper-pagination"}></div>
           <img
             src={"/icons/arrow-right.svg"}
             className={"swiper-button-next"}
