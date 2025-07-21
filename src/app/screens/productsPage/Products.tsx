@@ -97,7 +97,7 @@ const history = useHistory();
            flexDirection={'column'} 
            alignItems={'center'}>
             <Stack className={"avatar-big-box"} justifyContent={'space-between'}>
-                    <p>Burak Restaurant</p>
+                    <p>The Gusto Restaurant</p>
                     <Stack flexDirection={'row'} position={'relative'} alignItems={'center'}>
                        <input 
                        type="search" 
@@ -230,11 +230,9 @@ const history = useHistory();
                                     e.stopPropagation();
                                    }}
                                 >
-                                    <img 
-                                    alt=""
-                                    src={"/icons/shopping-cart.svg"}
-                                    style={{ display: "flex "}}
-                                    />
+                                    <b>
+                                        Order Now
+                                    </b>
                                 </Button>
                                 <Button className={"view-btn"} sx={{ right: "36px"}}>
                                     <Badge 
@@ -262,7 +260,7 @@ const history = useHistory();
                             );
                         })
                     ) : (
-                        <Box className="no-data">Products are not available</Box>
+                        <Box className="no-data">Products are unavailable</Box>
                     )}
                 </Stack>
             </Stack>
@@ -293,20 +291,20 @@ const history = useHistory();
 
 
       <div className={"brands-logo"}>
-        <Container className={"family-brands"}>
-            <Box className={"category-title"}>Our Family Brands</Box>
+      <Container className={"family-brands"}>
+            <Box className={"category-title"}>Our Branches</Box>
             <Stack className={"brand-list"}>
                 <Box className={"review-box"}>
-                    <img src={"/img/gurme.webp"} alt=""/>
+                    <img src={"/img/gustoo.png"} alt="" />
                 </Box>
                 <Box className={"review-box"}>
-                    <img src={"/img/seafood.webp"} alt=""/>
+                    <img src={"/img/gusto2.png"} alt=""/>
                 </Box>
                 <Box className={"review-box"}>
-                    <img src={"/img/sweets.webp"} alt=""/>
+                <img src={"/img/gusto3.png"} alt=""/>
                 </Box>
                 <Box className={"review-box"}>
-                    <img src={"/img/doner.webp"} alt=""/>
+                <img src={"/img/gusto1.png"} alt=""/>
                 </Box>    
             </Stack>
         </Container>

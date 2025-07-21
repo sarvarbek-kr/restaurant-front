@@ -9,6 +9,7 @@ import Divider from "../../components/divider";
 import AspectRatio from "@mui/joy/AspectRatio";
 import { useSelector } from "react-redux";
 import { createSelector } from "reselect";
+import { useHistory } from "react-router-dom";
 import { retrieveNewDishes, retrievePopularDishes } from "./selector";
 import { Product } from "../../../lib/types/product";
 import { serverApi } from "../../../lib/config";
@@ -22,14 +23,19 @@ const newDishesRetriever = createSelector(retrieveNewDishes, (newDishes) => ({
 
 export default function NewDishes() {
     const { newDishes } = useSelector(newDishesRetriever);
+    const history = useHistory();
 
   console.log("newDishes:", newDishes);
+
+  const chooseProductHandler = (id:string) => {
+    history.push(`/products/${id}`)
+  }
 
     return (
     <div className={"new-products-frame"}>
        <Container>
         <Stack className={"main"}>
-            <Box className={"category-title"}>Fresh Menu</Box>
+            <Box className={"category-title"}>Post-Meal Delights</Box>
             <Stack className={"cards-frame"}>
                 <CssVarsProvider>
                   {newDishes.length !== 0 ? (
@@ -39,7 +45,7 @@ export default function NewDishes() {
                         ? product.productVolume + "l" 
                         : product.productSize + " size ";
                         return (
-                            <Card key={product._id} variant="outlined" className={"card"}>
+                            <Card key={product._id} variant="outlined" className={"card"} onClick={()=> chooseProductHandler(product._id)}>
                                 <CardOverflow>
                                     <div className="product-sale">{sizeVolume}</div>
                                     <AspectRatio ratio="1">
@@ -72,7 +78,7 @@ export default function NewDishes() {
                         );
                     })
                     ) : (
-                        <Box className="no-data">New products are not available!</Box>
+                        <Box className="no-data">Seasonal Menu is unavailable!</Box>
                     )}
                 </CssVarsProvider>
             </Stack>

@@ -149,7 +149,7 @@ export default function HomeNavbar(props: HomeNavbarProps) {
             <Box className={"head-main-txt"} >
               Exploring Delicacies From Around the World
               </Box>
-            <Box className={"wel-txt"}>The Choice, not just a choice</Box>
+            <Box className={"wel-txt"}>Where Flavors Tell a Story</Box>
             <Box className={"signup"}>
               {!authMember ? (
               <Button 

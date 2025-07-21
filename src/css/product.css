@@ -171,7 +171,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #ff9200;
+	background: #4e700a;
 	box-shadow: 4px 6px 20px #0000001a;
 	border-radius: 25px;
 	font-family: "Poppins";
@@ -232,7 +232,7 @@
 	opacity: 1;
 }
 
-.products-page .products .product-img img {
+.products-page .products .product-img b {
 	position: absolute;
 	display: block;
 	max-width: 100%;
@@ -242,11 +242,11 @@
 
 .products-page .products .shop-btn {
 	position: absolute;
-	padding: 20px;
-	top: 217px;
-	width: 64px;
+	padding: 10px;
+	top: 197px;
+	width: 150px;
 	height: 46px;
-	left: 105px;
+	left: 40px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -254,15 +254,15 @@
 	z-index: 3;
 	opacity: 0;
 	transition: opacity 0.5s ease;
-	background: rgb(198 0 255 / 66%);
-	border: 2px solid #d7b686;
-	border-radius: 10px;
+	background: #fff;
+	border: 3px solid #4e700a;
+	border-radius: 50px;
 	font-family: "Poppins";
 	font-style: normal;
-	font-weight: 600;
-	font-size: 10px;
+	font-weight: 800;
+	font-size: 14px;
 	line-height: 15px;
-	color: #f8f8ff;
+	color: #4e700a;
 }
 
 .products-page .products .product-img:hover .shop-btn {
@@ -275,7 +275,7 @@
 
 .products-page .products .view-btn {
 	position: absolute;
-	top: 223px;
+	top: 200px;
 	padding: 5px;
 	min-width: 40px;
 	width: 40px;
@@ -317,6 +317,7 @@
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 43px;
+  color: #343434;
 }
 
 .products-page .products .brands-logo {
@@ -340,7 +341,7 @@
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 43px;
-	color: #d7b686;
+	color: #f8f8ff;
 }
 
 .products-page .products .brands-logo .family-brands .brand-list {
@@ -349,14 +350,15 @@
 	flex-direction: row;
 	justify-content: space-between;
 }
-.products-page .products .brands-logo .review-box {
+.products-page .products .brands-logo .review-box img {
+  position: relative;
 	margin-top: 40px;
-	padding: 25px;
-	width: 260px;
-	height: 350px;
+	padding: 5px;
+	width: 300px;
+	height: 380px;
 	display: flex;
-	box-shadow: 0px 1px 15px 5px #c8b3b340;
-	border-radius: 25px;
+	box-shadow: 0px 1px 10px 5px #c8b3b340;
+	border-radius: 15px;
 }
 
 
@@ -522,7 +524,7 @@
     font-weight: 600;
     font-size: 15px;
     line-height: 22px;
-    color: #f8f8ff;
+    color: #000000;
   }
   
   .products-page .chosen-product .title {

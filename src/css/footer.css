@@ -1,73 +1,83 @@
-.foot-desc-txt {
-  margin-top: 22px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 34px;
-  color: #e3c08d;
-}
 
-.sns-context {
-  margin-top: 17px;
-  width: 137px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
 .foot-category-title {
-  width: 106px;
-  font-family: "Poppins";
+  width: 250px;
+  font-family: Inter;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 34px;
-  color: #c5c8c9;
+  color: #fff;
+  margin-bottom: 40px;
 }
 
-.foot-category-link {
-  margin-top: 20px;
-  height: 170px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 170px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 34px;
-}
-
-.foot-category-link a {
-  color: #e3c08d;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.find-us {
+.foot-cover {
   display: flex;
   flex-direction: row;
+  height: 30px;
 }
 
-.find-us span {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 34px;
-  color: #c5c8c9;
-}
-
-.find-us div {
-  margin-left: 10px;
-  font-family: "Poppins";
+.foot-desc-txt {
+  color:  #c5c8c9;
+  font-family: Inter;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 34px;
-  color: #e3c08d;
+  line-height: normal;
+  margin-left: 15px;
+}
+.sns-context {
+  position: relative;
+  margin-left: 66px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+  width: 55px;
+  margin-top: 30px;
+}
+
+.foot-category-mail {
+  display: flex;
+  width: 523px;
+  padding: 30px 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  border: 2px solid var(--FFFFFF, #FFF);
+  color: #c5c8c9;
+  text-decoration: none;
+}
+
+.foot-mail-txt {
+  color: var(--FFFFFF, #FFF);
+  font-feature-settings: 'liga' off, 'clig' off;
+  
+  /* Body */
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.48px;
+}
+
+.subscribe {
+  border: 2px solid #ccc;
+  margin-left: 5px;
+   width: 200px;
+   height: 60px;
+   border-radius: 0px 0px 40px 0px;
+   background: #FFF;
+   text-align: center;
+   font-family: Inter;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   color: #C0A677;
 }
 
 .copyright-txt {
@@ -77,7 +87,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 34px;
-  color: #e3c08d;
+  color: #fff;
 }
 
 .foot-category-title:after {

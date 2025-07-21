@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Container, Stack } from "@mui/material";
 import {CssVarsProvider} from "@mui/joy/styles";
 import Card from '@mui/joy/Card';
@@ -8,7 +8,7 @@ import Typography from '@mui/joy/Typography';
 import CardOverflow from '@mui/joy/CardOverflow';
 import VisibilityIcon from "@mui/icons-material/Visibility"
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
-
+import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { createSelector } from "reselect";
 import { retrievePopularDishes } from "./selector";
@@ -25,19 +25,27 @@ retrievePopularDishes,
 
 export default function PopularDishes() {
   const { popularDishes } = useSelector(popularDishesRetriever);
+  const history = useHistory();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const chooseProductHandler = (id:string) => {
+    history.push(`/products/${id}`)
+  }
     return (
     <div className="popular-dishes-frame">
        <Container>
          <Stack className="popular-section">
-            <Box className="category-title">Popular Dishes</Box>
+            <Box className="category-title">Menu of the day</Box>
             <Stack className="cards-frame">
               {popularDishes.length !== 0 ? (
               popularDishes.map((product: Product) => {
                 const imagePath = `${serverApi}/${product.productImages[0]}`;
                 return (
                   <CssVarsProvider key={product._id}>
-                    <Card className={"card"}>
+                    <Card className={"card"} onClick={()=> chooseProductHandler(product._id)}>
                       <CardCover>
                         <img src={imagePath} alt=""/>
                       </CardCover>
@@ -73,9 +81,9 @@ export default function PopularDishes() {
                         display: "flex",
                         gap: 1.5,
                         py: 1.5,
-                        px: "var(--Card-padding",
+                        px: "var(--Card-padding)",
                         borderTop: "1px solid",
-                        height: "60px",
+                        height: "80px",
                       }}
                       >
                         <Typography
@@ -90,7 +98,7 @@ export default function PopularDishes() {
                 );
               })
               ) : (
-                  <Box className="no-data">Popular Dishes are not available!</Box>
+                  <Box className="no-data">Today's menu of the day is unavailable!</Box>
               )}
             </Stack>
          </Stack>

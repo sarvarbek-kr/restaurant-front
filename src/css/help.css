@@ -25,6 +25,14 @@
   justify-content: space-between;
 }
 
+.help-page .help-menu .table-list .tab-name {
+  color: #000000;
+}
+
+.help-page .help-menu .table-list .tab-name:hover{
+  color: #C0A677;
+}
+
 .help-page .css-1gsv261 {
   width: 75%;
 }
@@ -39,7 +47,7 @@
 
 .help-page .help-main-content {
   width: 100%;
-  height: 1000px;
+  /* height: 1000px; */
 }
 
 .help-page .rules-box {
